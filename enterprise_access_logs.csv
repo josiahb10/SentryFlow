@@ -1,0 +1,501 @@
+timestamp,employee_id,department,action,resource_accessed,data_payload
+2026-02-18 21:17:17,E9124,Sales,delete,payroll,Logged system activity.
+2026-03-13 10:42:48,E5129,Marketing,download,crm,Uploaded expense receipts.
+2026-02-16 02:21:04,E7300,Operations,logout,customer_db,Downloaded team roster.
+2026-02-23 14:35:12,E4672,Marketing,view,fileserver,Downloaded team roster.
+2026-02-16 19:26:04,E9842,Finance,download,payroll,Submitted timesheet.
+2026-03-11 20:57:27,E7833,Finance,download,intranet,Accessed employee handbook.
+2026-03-13 15:09:55,E6204,Engineering,delete,customer_db,Quarterly report reviewed.
+2026-02-18 15:08:59,E4214,Sales,view,intranet,Edited client contact info.
+2026-03-08 14:12:58,E4967,Sales,edit,vpn,Uploaded expense receipts.
+2026-02-28 12:42:01,E4604,Marketing,view,email,Logged system activity.
+2026-03-10 09:13:36,E7026,Marketing,logout,crm,Checked meeting schedule.
+2026-03-04 06:03:25,E4140,Marketing,view,crm,Accessed employee handbook.
+2026-03-10 02:57:29,E9154,IT,upload,crm,Quarterly report reviewed.
+2026-02-19 01:43:07,E4375,Operations,delete,crm,Quarterly report reviewed.
+2026-03-13 09:22:18,E3490,Marketing,view,fileserver,Quarterly report reviewed.
+2026-03-02 13:54:09,E5765,Sales,delete,customer_db,Uploaded expense receipts.
+2026-03-01 16:45:39,E5441,IT,logout,intranet,Viewed company policy.
+2026-02-23 08:59:21,E1958,HR,upload,crm,Viewed company policy.
+2026-02-27 19:48:36,E9522,HR,delete,customer_db,SSN: 171-58-6655
+2026-02-25 10:32:37,E6570,Marketing,view,crm,Viewed company policy.
+2026-03-07 19:06:56,E1941,IT,upload,intranet,Edited client contact info.
+2026-03-08 12:56:29,E3229,HR,edit,customer_db,Uploaded expense receipts.
+2026-02-21 05:08:40,E3773,Marketing,login,crm,Edited client contact info.
+2026-02-24 19:24:39,E3871,IT,download,payroll,Updated project documentation.
+2026-03-05 17:15:59,E9547,Operations,upload,crm,Submitted timesheet.
+2026-03-02 11:47:53,E9141,IT,delete,customer_db,Submitted timesheet.
+2026-03-12 13:18:40,E9627,HR,delete,fileserver,Checked meeting schedule.
+2026-02-24 12:51:32,E6724,IT,view,email,Updated project documentation.
+2026-03-09 20:38:39,E2679,IT,login,customer_db,Logged system activity.
+2026-03-09 23:05:34,E8773,Marketing,logout,crm,Uploaded expense receipts.
+2026-02-26 02:44:46,E7861,Marketing,upload,customer_db,Accessed employee handbook.
+2026-03-07 20:19:35,E9075,HR,login,vpn,Downloaded team roster.
+2026-02-25 18:57:52,E5431,Finance,upload,customer_db,Viewed company policy.
+2026-03-12 09:33:30,E6670,Marketing,download,vpn,Uploaded expense receipts.
+2026-02-15 22:06:11,E9048,Marketing,logout,intranet,Checked meeting schedule.
+2026-02-14 10:39:39,E8000,IT,view,intranet,Edited client contact info.
+2026-02-28 17:54:23,E7073,Sales,download,email,Uploaded expense receipts.
+2026-02-25 06:25:13,E4965,Operations,download,email,Checked meeting schedule.
+2026-02-25 16:59:07,E2344,Marketing,upload,email,Downloaded team roster.
+2026-03-06 11:47:10,E5804,IT,delete,customer_db,Edited client contact info.
+2026-02-27 14:30:49,E3760,Sales,login,intranet,Checked meeting schedule.
+2026-03-07 15:39:24,E8332,Engineering,download,intranet,Credit Card: 6712-0794-0427-9089
+2026-02-27 10:29:06,E9969,Engineering,download,intranet,Checked meeting schedule.
+2026-03-13 11:20:33,E9737,HR,download,payroll,Checked meeting schedule.
+2026-03-03 14:43:49,E9584,HR,download,vpn,Viewed company policy.
+2026-02-20 12:18:04,E5049,Marketing,delete,payroll,Quarterly report reviewed.
+2026-02-25 15:02:10,E9961,IT,login,vpn,Submitted timesheet.
+2026-02-14 00:45:59,E7560,Marketing,login,intranet,Viewed company policy.
+2026-02-21 03:59:37,E2181,Marketing,logout,fileserver,Quarterly report reviewed.
+2026-03-09 15:33:41,E6471,IT,login,crm,Accessed employee handbook.
+2026-02-25 15:30:25,E4320,Finance,download,customer_db,Quarterly report reviewed.
+2026-02-22 21:23:46,E3815,Finance,view,email,Downloaded team roster.
+2026-03-02 15:24:16,E7331,Engineering,edit,customer_db,Checked meeting schedule.
+2026-02-24 10:00:26,E9195,Marketing,delete,crm,Logged system activity.
+2026-03-10 02:34:28,E9881,Sales,edit,email,Edited client contact info.
+2026-03-05 00:25:41,E7848,Operations,edit,fileserver,Updated project documentation.
+2026-03-14 00:51:16,E3838,Sales,login,payroll,Updated project documentation.
+2026-02-15 23:45:40,E1452,Finance,edit,customer_db,Viewed company policy.
+2026-02-14 05:10:34,E4224,Marketing,edit,crm,Viewed company policy.
+2026-02-23 02:59:51,E2403,HR,edit,crm,Quarterly report reviewed.
+2026-02-16 12:28:36,E1772,Operations,download,fileserver,Checked meeting schedule.
+2026-03-05 03:42:46,E8087,Sales,delete,crm,Submitted timesheet.
+2026-03-08 22:11:59,E6322,Engineering,edit,vpn,Checked meeting schedule.
+2026-03-02 22:44:03,E9005,Sales,download,customer_db,Accessed employee handbook.
+2026-02-14 13:55:59,E7798,Marketing,download,customer_db,Uploaded expense receipts.
+2026-03-02 19:56:52,E6149,HR,logout,customer_db,Logged system activity.
+2026-02-23 03:44:52,E5440,IT,download,fileserver,SSN: 138-35-1280
+2026-02-25 09:55:54,E2364,IT,download,customer_db,Submitted timesheet.
+2026-02-20 22:25:26,E3270,Engineering,upload,payroll,Submitted timesheet.
+2026-02-19 01:51:43,E8430,Marketing,edit,intranet,Logged system activity.
+2026-03-02 06:38:25,E5562,Finance,login,intranet,Downloaded team roster.
+2026-02-24 09:50:31,E2282,HR,download,crm,Updated project documentation.
+2026-03-04 05:17:21,E1549,HR,view,fileserver,Logged system activity.
+2026-03-04 15:57:47,E5221,IT,delete,fileserver,Logged system activity.
+2026-03-13 20:03:45,E8538,Engineering,logout,customer_db,Updated project documentation.
+2026-02-27 18:43:22,E5612,Sales,upload,crm,Submitted timesheet.
+2026-02-16 03:58:31,E6997,Engineering,login,payroll,Updated project documentation.
+2026-02-26 07:45:48,E7675,Operations,upload,email,Updated project documentation.
+2026-03-04 20:40:21,E7327,Marketing,edit,payroll,Quarterly report reviewed.
+2026-02-20 20:49:07,E6025,Marketing,logout,crm,Submitted timesheet.
+2026-02-25 17:14:54,E1717,Sales,login,payroll,Viewed company policy.
+2026-03-12 23:16:23,E1264,Operations,view,vpn,Logged system activity.
+2026-03-04 09:52:51,E7010,Operations,edit,payroll,SSN: 252-61-2016
+2026-03-14 07:47:04,E6126,Operations,upload,fileserver,SSN: 707-34-6607
+2026-02-22 18:59:47,E8617,Operations,upload,customer_db,Quarterly report reviewed.
+2026-02-19 00:48:34,E6238,Sales,delete,payroll,Uploaded expense receipts.
+2026-02-22 12:27:51,E6906,IT,edit,customer_db,Updated project documentation.
+2026-02-24 10:13:28,E3170,Finance,upload,vpn,Viewed company policy.
+2026-02-13 23:00:39,E7677,IT,edit,email,Edited client contact info.
+2026-02-19 21:12:47,E8532,Sales,upload,intranet,Checked meeting schedule.
+2026-02-14 06:01:56,E8031,Sales,view,intranet,Quarterly report reviewed.
+2026-02-22 09:49:46,E2979,Engineering,view,fileserver,Accessed employee handbook.
+2026-02-23 07:09:31,E9936,Operations,edit,vpn,Updated project documentation.
+2026-02-13 20:37:11,E7575,IT,download,payroll,Uploaded expense receipts.
+2026-03-12 11:10:09,E9565,IT,login,vpn,Updated project documentation.
+2026-03-07 01:06:30,E8715,IT,logout,customer_db,Credit Card: 0066-5174-8282-3144
+2026-02-23 02:50:25,E2836,Sales,download,customer_db,Updated project documentation.
+2026-03-07 10:52:00,E2583,Engineering,upload,customer_db,SSN: 194-63-2253
+2026-02-16 13:20:12,E2247,HR,edit,fileserver,Quarterly report reviewed.
+2026-02-19 01:09:51,E1562,Engineering,view,email,Logged system activity.
+2026-02-16 15:47:32,E2255,Sales,login,crm,Quarterly report reviewed.
+2026-03-03 14:40:00,E1847,Sales,delete,vpn,Uploaded expense receipts.
+2026-03-11 02:56:53,E9787,HR,edit,crm,Downloaded team roster.
+2026-02-21 17:41:11,E5866,Marketing,delete,intranet,Accessed employee handbook.
+2026-02-15 01:19:17,E7280,IT,logout,customer_db,Uploaded expense receipts.
+2026-03-13 15:11:54,E2312,Operations,logout,payroll,Downloaded team roster.
+2026-02-17 20:53:37,E7606,Finance,upload,payroll,Updated project documentation.
+2026-02-26 00:11:28,E9286,Finance,login,payroll,Checked meeting schedule.
+2026-03-09 16:57:02,E7791,HR,login,email,Checked meeting schedule.
+2026-02-21 22:05:02,E3277,Operations,view,fileserver,Quarterly report reviewed.
+2026-02-20 14:02:24,E8723,Marketing,edit,crm,Quarterly report reviewed.
+2026-02-18 18:56:03,E4560,Finance,logout,vpn,Uploaded expense receipts.
+2026-02-25 12:42:31,E7691,Finance,logout,intranet,Quarterly report reviewed.
+2026-02-23 13:04:11,E1204,Sales,edit,payroll,Downloaded team roster.
+2026-03-07 04:48:39,E5326,Sales,logout,customer_db,Logged system activity.
+2026-02-20 10:14:20,E6933,Marketing,edit,payroll,SSN: 596-24-1166
+2026-02-15 05:23:46,E7529,HR,delete,intranet,Edited client contact info.
+2026-03-05 06:06:03,E1544,Engineering,delete,email,Quarterly report reviewed.
+2026-03-04 17:57:05,E8773,Sales,delete,crm,Updated project documentation.
+2026-02-19 16:48:01,E7599,Sales,download,customer_db,Credit Card: 5093-6301-2663-7897
+2026-02-27 10:08:22,E1868,HR,edit,email,Quarterly report reviewed.
+2026-03-07 12:09:12,E8022,IT,upload,customer_db,Quarterly report reviewed.
+2026-02-21 13:43:41,E1110,IT,delete,email,Checked meeting schedule.
+2026-03-12 08:05:00,E9701,Finance,upload,intranet,Updated project documentation.
+2026-03-08 18:45:27,E5686,Engineering,logout,crm,Submitted timesheet.
+2026-03-04 09:26:01,E3083,Marketing,delete,intranet,Accessed employee handbook.
+2026-03-03 08:39:34,E9869,Marketing,edit,payroll,Submitted timesheet.
+2026-02-24 11:58:32,E6444,Engineering,login,customer_db,Quarterly report reviewed.
+2026-02-21 10:27:54,E1421,Sales,upload,fileserver,Updated project documentation.
+2026-02-20 02:12:46,E4627,Sales,logout,fileserver,Viewed company policy.
+2026-02-22 01:30:44,E4086,Operations,login,customer_db,Submitted timesheet.
+2026-03-10 18:38:06,E2717,HR,edit,intranet,Uploaded expense receipts.
+2026-02-14 01:25:45,E4867,HR,logout,customer_db,SSN: 153-93-2480
+2026-03-01 04:00:28,E4940,Sales,view,payroll,Credit Card: 8228-6061-7952-7016
+2026-02-20 06:16:52,E6798,Sales,edit,payroll,Edited client contact info.
+2026-02-19 01:45:14,E5956,Finance,login,email,Credit Card: 5993-9303-5535-2729
+2026-02-20 19:59:41,E2197,Sales,login,email,Submitted timesheet.
+2026-03-11 23:32:12,E1703,Engineering,edit,payroll,SSN: 568-13-1343
+2026-02-18 20:57:52,E6375,Finance,view,payroll,SSN: 841-56-5034
+2026-02-19 01:14:34,E4545,Operations,view,customer_db,Checked meeting schedule.
+2026-02-13 22:46:56,E9858,HR,delete,customer_db,Accessed employee handbook.
+2026-03-11 06:24:26,E6741,Finance,logout,customer_db,Checked meeting schedule.
+2026-02-17 05:59:00,E5575,Sales,view,customer_db,Downloaded team roster.
+2026-02-14 13:27:15,E3929,IT,download,crm,Logged system activity.
+2026-02-27 07:19:58,E8969,IT,download,payroll,Quarterly report reviewed.
+2026-03-05 16:42:24,E9919,Finance,upload,fileserver,Downloaded team roster.
+2026-02-20 19:10:12,E3032,Sales,login,email,Accessed employee handbook.
+2026-03-02 06:08:05,E3267,Operations,upload,email,Submitted timesheet.
+2026-02-20 16:14:29,E7400,Finance,logout,vpn,Quarterly report reviewed.
+2026-03-10 15:35:16,E3413,IT,logout,crm,Updated project documentation.
+2026-03-14 02:34:14,E9214,Sales,edit,crm,Checked meeting schedule.
+2026-03-01 05:30:21,E6179,Finance,download,crm,Checked meeting schedule.
+2026-03-13 12:47:16,E1328,IT,logout,vpn,Submitted timesheet.
+2026-03-04 02:30:38,E7392,Operations,view,customer_db,Viewed company policy.
+2026-03-08 20:03:11,E1060,Engineering,upload,customer_db,Uploaded expense receipts.
+2026-02-18 10:55:07,E6034,Operations,delete,email,Checked meeting schedule.
+2026-02-27 11:57:28,E1207,HR,view,email,Logged system activity.
+2026-03-07 03:40:17,E4512,Finance,logout,email,Accessed employee handbook.
+2026-03-03 17:20:38,E9762,Operations,delete,payroll,Checked meeting schedule.
+2026-03-14 08:02:00,E8309,Engineering,login,vpn,Viewed company policy.
+2026-03-02 00:57:32,E9562,Marketing,edit,vpn,Quarterly report reviewed.
+2026-03-06 09:27:15,E3645,IT,delete,vpn,Accessed employee handbook.
+2026-03-10 23:19:56,E1305,Operations,view,crm,Viewed company policy.
+2026-02-22 23:54:55,E7424,HR,login,payroll,Accessed employee handbook.
+2026-03-07 17:33:43,E4561,HR,delete,payroll,Submitted timesheet.
+2026-03-04 17:46:15,E7038,Marketing,view,vpn,Logged system activity.
+2026-02-20 06:43:24,E2793,IT,upload,payroll,Downloaded team roster.
+2026-02-20 10:32:20,E3937,HR,edit,fileserver,Logged system activity.
+2026-03-10 08:21:57,E6547,IT,delete,intranet,Quarterly report reviewed.
+2026-02-25 14:28:45,E4498,Finance,login,customer_db,Edited client contact info.
+2026-02-21 02:52:31,E3634,IT,login,payroll,Viewed company policy.
+2026-02-19 08:12:27,E7086,Operations,view,customer_db,Quarterly report reviewed.
+2026-02-15 12:02:12,E1369,Sales,logout,intranet,Accessed employee handbook.
+2026-03-04 08:11:58,E6997,Finance,upload,customer_db,Viewed company policy.
+2026-02-21 02:22:24,E1453,IT,edit,vpn,Checked meeting schedule.
+2026-02-13 11:42:05,E3057,HR,delete,payroll,Uploaded expense receipts.
+2026-02-18 19:23:38,E7508,Marketing,download,customer_db,Quarterly report reviewed.
+2026-03-06 02:53:58,E6408,Sales,upload,payroll,Quarterly report reviewed.
+2026-02-28 03:36:36,E5865,Marketing,login,customer_db,SSN: 951-10-9090
+2026-03-12 16:44:34,E5470,HR,view,customer_db,Accessed employee handbook.
+2026-03-06 09:51:44,E7759,Marketing,logout,vpn,Checked meeting schedule.
+2026-02-28 12:15:07,E3154,HR,view,vpn,Edited client contact info.
+2026-03-09 21:58:20,E7289,Marketing,upload,intranet,Submitted timesheet.
+2026-03-04 13:10:11,E5339,Sales,view,customer_db,Checked meeting schedule.
+2026-02-18 09:51:33,E7900,IT,view,email,Updated project documentation.
+2026-03-04 08:06:11,E3572,IT,login,payroll,Updated project documentation.
+2026-03-02 14:25:54,E6545,IT,delete,intranet,Viewed company policy.
+2026-02-14 04:39:42,E3142,IT,download,customer_db,Edited client contact info.
+2026-03-08 03:14:19,E3725,HR,delete,crm,Accessed employee handbook.
+2026-02-20 01:36:39,E7637,Engineering,upload,crm,Submitted timesheet.
+2026-02-28 12:09:08,E3843,Operations,download,email,Uploaded expense receipts.
+2026-03-11 02:53:33,E1276,Sales,edit,intranet,Accessed employee handbook.
+2026-02-27 12:36:53,E1117,Engineering,upload,payroll,Checked meeting schedule.
+2026-03-06 15:31:37,E7729,Finance,delete,customer_db,Edited client contact info.
+2026-03-02 11:12:25,E2798,Operations,delete,payroll,Credit Card: 8203-3968-6651-2193
+2026-03-04 07:35:30,E5982,Operations,view,customer_db,Credit Card: 2299-5830-0817-7516
+2026-02-16 23:35:23,E6031,HR,delete,intranet,Updated project documentation.
+2026-03-12 13:22:55,E7224,Engineering,edit,customer_db,Submitted timesheet.
+2026-02-14 22:50:11,E7261,HR,upload,vpn,Logged system activity.
+2026-03-06 02:17:29,E1890,Finance,logout,customer_db,Logged system activity.
+2026-03-11 13:11:55,E6519,Sales,login,intranet,Submitted timesheet.
+2026-02-17 16:43:17,E1507,IT,delete,crm,Uploaded expense receipts.
+2026-02-13 18:03:07,E2520,IT,login,email,Checked meeting schedule.
+2026-03-08 04:50:13,E9865,IT,delete,crm,Submitted timesheet.
+2026-02-19 22:44:53,E2760,Finance,download,crm,Accessed employee handbook.
+2026-03-05 20:05:37,E1184,Engineering,upload,email,Submitted timesheet.
+2026-03-14 02:45:33,E2542,Engineering,login,fileserver,Edited client contact info.
+2026-02-16 21:18:42,E5836,Operations,logout,fileserver,Quarterly report reviewed.
+2026-03-10 01:58:23,E8217,Finance,logout,crm,SSN: 780-96-4763
+2026-02-16 20:58:56,E6836,Marketing,download,intranet,Viewed company policy.
+2026-03-03 04:18:11,E7033,Finance,upload,customer_db,Uploaded expense receipts.
+2026-03-08 01:40:11,E1991,Sales,login,payroll,Checked meeting schedule.
+2026-03-08 16:52:32,E4427,Sales,upload,intranet,Quarterly report reviewed.
+2026-02-15 16:40:55,E3313,Engineering,delete,payroll,Quarterly report reviewed.
+2026-02-26 01:44:40,E9766,Operations,edit,payroll,Edited client contact info.
+2026-03-10 14:24:22,E1288,Finance,edit,intranet,Uploaded expense receipts.
+2026-03-02 00:53:19,E9004,HR,edit,crm,Edited client contact info.
+2026-03-01 13:37:21,E9304,IT,logout,fileserver,Downloaded team roster.
+2026-03-04 05:54:25,E5736,Sales,logout,payroll,Uploaded expense receipts.
+2026-02-20 18:49:36,E3858,Operations,edit,vpn,Edited client contact info.
+2026-03-03 16:40:16,E1244,Marketing,edit,vpn,Quarterly report reviewed.
+2026-02-17 15:08:34,E4649,Engineering,upload,crm,SSN: 683-88-6813
+2026-03-06 00:42:55,E3208,Operations,logout,crm,Submitted timesheet.
+2026-02-28 18:11:10,E4019,Finance,upload,email,Updated project documentation.
+2026-02-13 16:19:33,E8031,Finance,edit,email,Credit Card: 8498-5154-6047-1795
+2026-02-16 16:07:31,E1426,Sales,view,intranet,Accessed employee handbook.
+2026-03-03 12:12:12,E3322,IT,edit,email,Viewed company policy.
+2026-03-07 02:50:02,E1631,Sales,logout,payroll,Edited client contact info.
+2026-02-14 04:30:40,E3265,Operations,download,crm,Accessed employee handbook.
+2026-03-09 17:29:06,E2858,Operations,login,payroll,Edited client contact info.
+2026-02-16 00:43:14,E8342,Operations,logout,vpn,Accessed employee handbook.
+2026-03-02 09:47:52,E3135,Sales,login,intranet,Accessed employee handbook.
+2026-02-19 05:43:19,E1110,Marketing,upload,payroll,Uploaded expense receipts.
+2026-02-28 01:29:48,E8415,Operations,view,crm,Viewed company policy.
+2026-02-23 14:44:22,E1342,Finance,delete,payroll,Credit Card: 8578-1061-8081-4263
+2026-02-28 05:32:11,E7727,Sales,upload,fileserver,Logged system activity.
+2026-02-26 19:54:35,E7848,Finance,upload,customer_db,Credit Card: 8072-8543-4241-9969
+2026-03-10 04:46:13,E3327,Finance,login,payroll,Checked meeting schedule.
+2026-03-02 09:33:59,E2761,Marketing,view,crm,Quarterly report reviewed.
+2026-02-17 15:03:18,E9077,Finance,logout,customer_db,Uploaded expense receipts.
+2026-02-20 09:26:25,E9493,Sales,logout,vpn,Edited client contact info.
+2026-02-21 11:23:56,E3665,Operations,edit,vpn,Logged system activity.
+2026-02-20 09:22:27,E3346,HR,download,fileserver,Logged system activity.
+2026-02-26 04:04:30,E6216,IT,login,fileserver,Logged system activity.
+2026-02-28 08:09:31,E3811,Operations,delete,intranet,Viewed company policy.
+2026-02-15 21:13:22,E9205,Operations,edit,email,Edited client contact info.
+2026-02-22 03:09:39,E7138,Marketing,delete,vpn,SSN: 964-99-2752
+2026-02-26 06:28:53,E1427,Engineering,view,crm,Edited client contact info.
+2026-02-27 18:02:12,E2787,IT,edit,vpn,Logged system activity.
+2026-02-18 22:45:02,E4865,Marketing,login,intranet,Checked meeting schedule.
+2026-02-28 08:32:03,E6815,Finance,delete,customer_db,Accessed employee handbook.
+2026-02-17 13:42:16,E8665,HR,logout,crm,Edited client contact info.
+2026-03-05 01:46:53,E1552,Marketing,delete,email,SSN: 837-23-9953
+2026-02-15 13:07:10,E4438,Operations,upload,email,Checked meeting schedule.
+2026-02-22 09:22:46,E2752,IT,view,payroll,Updated project documentation.
+2026-03-08 22:46:24,E5463,Finance,download,vpn,Checked meeting schedule.
+2026-02-14 18:28:36,E1399,HR,logout,payroll,Viewed company policy.
+2026-03-11 06:24:15,E2150,Operations,delete,intranet,Credit Card: 0012-7305-4504-9321
+2026-02-17 05:57:42,E6648,Sales,edit,payroll,Updated project documentation.
+2026-03-11 17:37:04,E8342,Operations,edit,email,SSN: 886-50-4267
+2026-02-25 06:57:24,E4004,HR,upload,vpn,Checked meeting schedule.
+2026-03-14 11:16:02,E4879,Marketing,download,customer_db,Viewed company policy.
+2026-03-08 19:22:51,E4118,HR,download,crm,Downloaded team roster.
+2026-02-20 09:07:34,E9350,Engineering,edit,fileserver,Logged system activity.
+2026-02-18 23:15:26,E5535,Marketing,download,payroll,Checked meeting schedule.
+2026-02-15 01:59:51,E8706,IT,view,payroll,Checked meeting schedule.
+2026-02-22 06:01:35,E2049,Operations,login,intranet,Edited client contact info.
+2026-03-04 21:26:34,E9623,IT,download,fileserver,Edited client contact info.
+2026-03-07 05:23:26,E4436,Engineering,login,vpn,Checked meeting schedule.
+2026-03-13 06:33:19,E3969,IT,view,crm,Checked meeting schedule.
+2026-02-14 14:33:46,E6748,Finance,logout,customer_db,Quarterly report reviewed.
+2026-02-16 21:52:53,E8522,HR,logout,email,Quarterly report reviewed.
+2026-03-01 12:39:15,E8225,Finance,download,customer_db,Quarterly report reviewed.
+2026-02-28 16:21:50,E9437,HR,view,fileserver,Logged system activity.
+2026-03-05 00:11:12,E9697,Sales,login,fileserver,Credit Card: 2078-6599-1913-2647
+2026-02-21 12:41:25,E4899,IT,upload,fileserver,Checked meeting schedule.
+2026-02-15 03:27:02,E3644,IT,download,payroll,SSN: 641-56-8011
+2026-03-06 04:13:47,E9568,Marketing,login,payroll,Updated project documentation.
+2026-02-22 08:16:15,E5028,IT,login,intranet,Checked meeting schedule.
+2026-02-25 18:36:19,E2882,HR,download,email,Edited client contact info.
+2026-02-21 05:20:02,E6186,Operations,delete,intranet,Submitted timesheet.
+2026-03-13 22:34:16,E3866,HR,delete,payroll,SSN: 296-21-3985
+2026-03-09 02:17:27,E7287,HR,view,payroll,Accessed employee handbook.
+2026-02-22 05:12:57,E3942,Finance,edit,customer_db,Quarterly report reviewed.
+2026-02-21 16:53:57,E4393,Marketing,login,email,Uploaded expense receipts.
+2026-02-28 16:55:34,E1166,Engineering,download,email,Updated project documentation.
+2026-02-15 16:26:06,E8960,HR,logout,payroll,Quarterly report reviewed.
+2026-03-05 06:37:45,E3115,Marketing,download,email,Uploaded expense receipts.
+2026-02-19 05:12:12,E9852,Marketing,login,vpn,Downloaded team roster.
+2026-03-13 04:06:40,E2609,Sales,upload,payroll,Downloaded team roster.
+2026-03-04 03:35:31,E9728,IT,download,vpn,Credit Card: 8096-4372-8675-2611
+2026-03-01 01:02:08,E7874,HR,login,fileserver,Quarterly report reviewed.
+2026-03-01 12:57:04,E9205,Engineering,edit,fileserver,Uploaded expense receipts.
+2026-02-21 18:39:17,E3899,Operations,logout,crm,SSN: 755-15-3304
+2026-03-09 18:45:53,E9917,Finance,login,intranet,Quarterly report reviewed.
+2026-03-01 00:19:39,E8530,HR,logout,customer_db,Updated project documentation.
+2026-02-21 01:42:21,E3264,Operations,delete,fileserver,Downloaded team roster.
+2026-02-27 10:20:22,E6942,Finance,upload,crm,Downloaded team roster.
+2026-02-19 05:16:58,E6952,Marketing,delete,intranet,Edited client contact info.
+2026-03-06 03:10:57,E4581,IT,delete,crm,Edited client contact info.
+2026-02-28 01:13:37,E5606,Operations,login,customer_db,Credit Card: 7261-4112-4812-9808
+2026-03-13 04:15:33,E9082,IT,download,intranet,Quarterly report reviewed.
+2026-02-22 06:39:55,E2187,HR,delete,email,Viewed company policy.
+2026-03-08 08:30:48,E6510,Marketing,login,customer_db,Credit Card: 7168-2516-8570-6454
+2026-02-27 07:04:59,E6819,HR,view,crm,Updated project documentation.
+2026-02-15 08:28:50,E7097,Sales,upload,payroll,Uploaded expense receipts.
+2026-02-19 11:42:31,E5160,Engineering,view,fileserver,Accessed employee handbook.
+2026-02-25 05:12:25,E9064,IT,upload,email,Checked meeting schedule.
+2026-03-05 02:09:53,E5379,Operations,download,fileserver,Uploaded expense receipts.
+2026-02-26 12:52:31,E8543,Operations,logout,fileserver,Quarterly report reviewed.
+2026-02-25 21:12:54,E9356,Finance,login,crm,Updated project documentation.
+2026-02-19 19:03:01,E1812,Sales,edit,fileserver,Updated project documentation.
+2026-03-13 02:56:12,E4327,Sales,upload,customer_db,Uploaded expense receipts.
+2026-02-24 02:43:04,E6971,HR,edit,vpn,Submitted timesheet.
+2026-02-16 14:17:03,E3621,Marketing,upload,email,Credit Card: 3034-4961-8723-5067
+2026-02-24 10:53:26,E5753,HR,logout,vpn,Viewed company policy.
+2026-02-19 14:48:57,E7472,IT,login,intranet,Logged system activity.
+2026-02-26 16:23:36,E9640,Finance,upload,intranet,Submitted timesheet.
+2026-03-05 00:52:53,E9904,HR,download,vpn,Logged system activity.
+2026-02-16 16:18:08,E7210,Operations,view,payroll,Submitted timesheet.
+2026-03-10 21:06:49,E3849,IT,upload,crm,Edited client contact info.
+2026-03-12 15:37:13,E4790,HR,view,customer_db,Updated project documentation.
+2026-02-15 10:57:57,E5199,Engineering,view,fileserver,Checked meeting schedule.
+2026-02-13 04:38:38,E1960,Sales,upload,customer_db,Updated project documentation.
+2026-03-10 13:51:28,E3027,Marketing,login,crm,Logged system activity.
+2026-02-27 23:33:57,E4321,Finance,download,vpn,Viewed company policy.
+2026-03-09 08:34:02,E6381,Marketing,upload,crm,Credit Card: 6716-4449-0986-5221
+2026-02-23 10:42:57,E6973,Marketing,download,crm,Edited client contact info.
+2026-03-12 23:03:02,E1247,IT,logout,vpn,Edited client contact info.
+2026-02-21 19:25:39,E7271,HR,download,crm,Uploaded expense receipts.
+2026-02-14 19:02:54,E5952,Sales,upload,customer_db,Checked meeting schedule.
+2026-02-18 10:54:48,E9174,HR,delete,vpn,Updated project documentation.
+2026-02-26 19:00:30,E2329,Finance,login,customer_db,Updated project documentation.
+2026-02-27 08:14:21,E7132,Engineering,delete,payroll,Checked meeting schedule.
+2026-02-22 07:22:39,E4872,Sales,view,fileserver,Viewed company policy.
+2026-03-02 08:59:29,E1687,Finance,download,customer_db,Accessed employee handbook.
+2026-03-07 01:04:11,E4737,Marketing,logout,crm,Submitted timesheet.
+2026-03-02 06:46:39,E7760,Engineering,upload,crm,Logged system activity.
+2026-02-15 12:15:52,E1550,Sales,login,customer_db,Uploaded expense receipts.
+2026-03-09 20:23:37,E9933,Operations,logout,customer_db,Checked meeting schedule.
+2026-02-21 10:49:02,E1302,Finance,view,intranet,Uploaded expense receipts.
+2026-03-01 12:01:21,E5788,Finance,upload,intranet,Uploaded expense receipts.
+2026-02-28 13:36:30,E6066,HR,delete,payroll,Submitted timesheet.
+2026-03-08 06:51:43,E2180,Engineering,upload,customer_db,Submitted timesheet.
+2026-03-05 18:05:46,E3095,Operations,delete,fileserver,Edited client contact info.
+2026-02-27 18:51:38,E4930,Sales,delete,vpn,Downloaded team roster.
+2026-03-12 20:58:36,E3479,Marketing,login,email,Accessed employee handbook.
+2026-02-24 18:28:48,E5674,HR,upload,fileserver,Updated project documentation.
+2026-02-21 00:07:52,E5335,HR,logout,intranet,Uploaded expense receipts.
+2026-02-19 21:09:11,E2863,Operations,login,fileserver,Downloaded team roster.
+2026-02-23 16:50:37,E5196,IT,logout,crm,SSN: 682-98-7281
+2026-03-06 17:44:18,E9031,Finance,upload,intranet,Logged system activity.
+2026-03-03 12:52:39,E4475,Operations,view,customer_db,Edited client contact info.
+2026-02-28 21:54:34,E4770,Engineering,edit,customer_db,SSN: 750-93-9293
+2026-02-25 14:03:12,E3878,IT,logout,payroll,Uploaded expense receipts.
+2026-03-06 05:53:34,E8537,HR,delete,payroll,Accessed employee handbook.
+2026-03-08 23:05:12,E1067,Engineering,download,crm,Checked meeting schedule.
+2026-02-23 07:18:50,E1555,Engineering,logout,vpn,Quarterly report reviewed.
+2026-02-20 04:35:33,E7056,Marketing,delete,vpn,SSN: 569-17-8016
+2026-03-02 02:45:33,E3645,Marketing,login,fileserver,Quarterly report reviewed.
+2026-02-14 11:51:57,E2402,HR,logout,fileserver,Updated project documentation.
+2026-02-27 23:32:15,E9863,Marketing,logout,customer_db,Checked meeting schedule.
+2026-03-10 09:33:15,E2458,Operations,login,customer_db,Viewed company policy.
+2026-02-13 07:54:39,E4995,Finance,delete,intranet,Viewed company policy.
+2026-02-18 04:59:23,E1481,Engineering,download,vpn,SSN: 950-50-6619
+2026-02-14 16:03:23,E6616,Marketing,upload,crm,Accessed employee handbook.
+2026-02-14 19:30:08,E9056,Finance,delete,crm,Quarterly report reviewed.
+2026-03-12 19:20:40,E3153,Sales,view,fileserver,Credit Card: 9615-8766-7193-4708
+2026-02-23 06:46:04,E3718,Finance,view,payroll,Quarterly report reviewed.
+2026-02-16 20:54:13,E6569,HR,edit,customer_db,Viewed company policy.
+2026-03-04 08:13:29,E2821,Marketing,login,payroll,Downloaded team roster.
+2026-03-14 04:03:16,E2788,Marketing,edit,email,Checked meeting schedule.
+2026-03-07 01:45:17,E2140,Marketing,upload,crm,Checked meeting schedule.
+2026-02-13 17:30:28,E7124,Finance,download,email,Logged system activity.
+2026-03-10 09:02:04,E1981,Sales,logout,fileserver,Checked meeting schedule.
+2026-03-06 10:20:33,E7600,Operations,download,customer_db,Edited client contact info.
+2026-02-27 17:51:44,E6312,IT,login,customer_db,Quarterly report reviewed.
+2026-02-15 02:42:30,E3176,Marketing,download,customer_db,Updated project documentation.
+2026-02-22 20:00:33,E8218,Sales,logout,customer_db,Logged system activity.
+2026-03-07 01:28:57,E5266,Operations,download,fileserver,Edited client contact info.
+2026-03-03 08:19:22,E8537,Sales,delete,payroll,Submitted timesheet.
+2026-03-07 06:39:58,E7535,Marketing,upload,vpn,Viewed company policy.
+2026-03-12 05:43:30,E9435,IT,delete,email,Submitted timesheet.
+2026-02-18 13:14:34,E6743,Marketing,download,vpn,Edited client contact info.
+2026-02-15 07:56:18,E5292,Sales,login,crm,Submitted timesheet.
+2026-02-28 13:13:09,E1982,Sales,view,crm,Edited client contact info.
+2026-03-06 10:09:36,E7215,Marketing,edit,intranet,Accessed employee handbook.
+2026-02-17 18:21:51,E6298,IT,view,email,Uploaded expense receipts.
+2026-03-04 15:04:07,E9547,IT,delete,email,Accessed employee handbook.
+2026-03-14 06:03:33,E3382,IT,login,email,Downloaded team roster.
+2026-02-24 12:28:18,E5468,Sales,download,crm,Edited client contact info.
+2026-03-05 04:49:11,E2134,IT,upload,crm,Downloaded team roster.
+2026-02-13 00:15:12,E5493,Sales,upload,crm,Accessed employee handbook.
+2026-02-14 09:55:07,E2316,Engineering,view,crm,Uploaded expense receipts.
+2026-03-12 12:28:48,E3209,Engineering,delete,crm,SSN: 497-79-6266
+2026-02-16 18:07:02,E3013,IT,view,intranet,Downloaded team roster.
+2026-02-14 10:42:38,E8126,Sales,logout,payroll,SSN: 709-37-4047
+2026-03-10 09:03:52,E2976,Marketing,download,vpn,Submitted timesheet.
+2026-02-24 02:54:50,E3319,HR,delete,intranet,Logged system activity.
+2026-03-03 08:46:56,E2478,Finance,logout,email,Accessed employee handbook.
+2026-02-20 21:40:02,E6343,IT,delete,intranet,Edited client contact info.
+2026-03-03 10:14:17,E1530,Operations,login,payroll,Viewed company policy.
+2026-02-22 14:52:56,E3804,Finance,download,payroll,Credit Card: 8729-3320-3432-5169
+2026-03-13 18:44:56,E8211,Operations,login,customer_db,Edited client contact info.
+2026-03-13 03:04:25,E9455,IT,download,vpn,Uploaded expense receipts.
+2026-02-12 18:14:59,E3378,Sales,upload,vpn,Edited client contact info.
+2026-03-06 17:22:27,E8878,Engineering,login,intranet,Accessed employee handbook.
+2026-02-27 19:38:59,E3398,Engineering,logout,crm,Checked meeting schedule.
+2026-02-21 19:50:12,E5300,Sales,download,email,Edited client contact info.
+2026-03-11 04:30:29,E3944,IT,view,intranet,Updated project documentation.
+2026-02-25 20:26:53,E9028,HR,upload,intranet,Accessed employee handbook.
+2026-02-25 08:25:58,E6861,Finance,login,payroll,Credit Card: 9189-2364-4488-2108
+2026-02-14 02:10:21,E5965,Operations,view,crm,Submitted timesheet.
+2026-02-22 22:53:14,E6363,Marketing,download,payroll,Accessed employee handbook.
+2026-02-14 03:39:33,E9228,HR,delete,vpn,Checked meeting schedule.
+2026-02-24 23:31:34,E6128,HR,edit,fileserver,Quarterly report reviewed.
+2026-02-26 10:51:42,E2097,Finance,logout,intranet,Checked meeting schedule.
+2026-02-25 22:56:30,E4131,Operations,upload,payroll,Accessed employee handbook.
+2026-02-20 06:49:04,E2587,Sales,upload,vpn,Edited client contact info.
+2026-02-19 03:38:27,E8363,HR,download,email,Updated project documentation.
+2026-02-17 15:26:25,E4763,Sales,delete,crm,Logged system activity.
+2026-03-08 19:10:50,E5204,Finance,download,intranet,Accessed employee handbook.
+2026-03-05 08:32:37,E5697,Engineering,login,customer_db,Downloaded team roster.
+2026-02-17 19:24:32,E2789,Operations,download,fileserver,Downloaded team roster.
+2026-02-14 18:41:25,E6178,Marketing,download,fileserver,Quarterly report reviewed.
+2026-02-21 18:57:05,E9615,HR,login,email,Checked meeting schedule.
+2026-02-22 21:24:28,E6756,Marketing,delete,customer_db,Edited client contact info.
+2026-02-18 07:13:29,E5856,Finance,view,crm,Credit Card: 8100-8323-9787-3925
+2026-03-07 02:16:36,E2592,Sales,view,vpn,Quarterly report reviewed.
+2026-03-10 23:15:54,E6881,Engineering,upload,payroll,Viewed company policy.
+2026-02-22 04:53:08,E7634,Marketing,view,fileserver,Checked meeting schedule.
+2026-02-25 00:14:15,E4201,IT,download,fileserver,Credit Card: 0947-7157-3169-7456
+2026-02-23 02:03:19,E2206,Marketing,upload,vpn,Checked meeting schedule.
+2026-02-13 09:30:56,E2671,Marketing,download,crm,Logged system activity.
+2026-02-19 12:49:19,E6214,IT,edit,fileserver,Edited client contact info.
+2026-02-28 08:33:00,E2953,Engineering,delete,intranet,Credit Card: 4306-2894-3277-3942
+2026-02-20 10:02:53,E1424,Operations,view,fileserver,Accessed employee handbook.
+2026-02-18 08:11:18,E3186,Engineering,logout,customer_db,Uploaded expense receipts.
+2026-03-09 01:17:29,E6987,Operations,edit,vpn,Accessed employee handbook.
+2026-03-13 02:44:11,E3647,Finance,view,email,Checked meeting schedule.
+2026-02-28 11:01:39,E3959,IT,logout,crm,Uploaded expense receipts.
+2026-03-06 04:00:27,E4913,Finance,view,crm,Edited client contact info.
+2026-03-13 08:05:24,E6366,Operations,view,intranet,Submitted timesheet.
+2026-02-20 13:19:53,E7371,Marketing,upload,customer_db,Viewed company policy.
+2026-03-03 17:28:41,E3574,Operations,login,fileserver,Logged system activity.
+2026-02-14 04:43:01,E2858,Engineering,delete,customer_db,Submitted timesheet.
+2026-02-16 13:42:38,E7478,HR,login,email,Updated project documentation.
+2026-03-12 08:59:34,E5029,Marketing,upload,email,Quarterly report reviewed.
+2026-03-05 21:15:44,E2913,Engineering,logout,intranet,Accessed employee handbook.
+2026-03-12 05:57:27,E8523,Sales,upload,email,Uploaded expense receipts.
+2026-03-07 21:32:41,E5073,Operations,upload,payroll,Downloaded team roster.
+2026-03-01 11:52:33,E3722,Sales,delete,crm,Updated project documentation.
+2026-03-11 08:09:26,E9761,HR,download,intranet,Checked meeting schedule.
+2026-03-07 18:42:19,E2961,Marketing,edit,email,Logged system activity.
+2026-02-24 21:12:15,E4409,Sales,download,vpn,Updated project documentation.
+2026-03-09 04:31:32,E9589,IT,view,fileserver,Downloaded team roster.
+2026-02-27 14:14:57,E9495,Operations,view,payroll,Downloaded team roster.
+2026-02-27 16:35:47,E6360,HR,edit,crm,Checked meeting schedule.
+2026-03-10 03:54:20,E8040,Marketing,login,email,Submitted timesheet.
+2026-02-24 12:39:52,E8347,Operations,delete,intranet,Quarterly report reviewed.
+2026-03-09 23:18:04,E1912,Finance,view,crm,Submitted timesheet.
+2026-02-24 11:44:44,E1086,HR,view,email,Submitted timesheet.
+2026-03-02 00:41:12,E5727,Finance,delete,fileserver,Checked meeting schedule.
+2026-02-23 15:46:55,E6704,IT,view,email,SSN: 375-13-9229
+2026-03-11 19:49:45,E8218,Engineering,delete,email,Checked meeting schedule.
+2026-02-20 02:48:59,E5187,HR,delete,fileserver,Submitted timesheet.
+2026-02-13 19:58:56,E2371,Marketing,view,intranet,Viewed company policy.
+2026-03-02 09:54:58,E5300,HR,login,vpn,Uploaded expense receipts.
+2026-02-20 05:17:39,E2884,Operations,download,crm,Logged system activity.
+2026-02-25 21:07:11,E8893,Operations,logout,fileserver,Checked meeting schedule.
+2026-03-04 00:54:38,E5452,Marketing,download,intranet,Uploaded expense receipts.
+2026-02-19 18:11:20,E5397,Engineering,edit,fileserver,Viewed company policy.
+2026-02-17 19:48:58,E9666,Sales,delete,payroll,Edited client contact info.
+2026-03-07 01:15:35,E7422,Engineering,delete,payroll,Viewed company policy.
+2026-03-09 05:13:16,E6508,Sales,delete,crm,Edited client contact info.
+2026-03-11 18:04:32,E9005,HR,upload,email,Downloaded team roster.
+2026-03-07 16:39:09,E6275,Marketing,download,payroll,Credit Card: 5743-0030-6772-4345
+2026-02-28 13:10:32,E6454,Finance,login,email,Submitted timesheet.
+2026-02-15 05:09:01,E8329,Finance,login,crm,Viewed company policy.
+2026-03-12 09:45:24,E1746,Marketing,logout,fileserver,Edited client contact info.
+2026-03-08 02:19:26,E2125,Engineering,edit,crm,Quarterly report reviewed.
+2026-03-09 20:59:46,E5376,IT,delete,vpn,Edited client contact info.
+2026-03-11 10:44:34,E8457,Sales,delete,intranet,Checked meeting schedule.
+2026-02-25 17:55:21,E5037,IT,login,customer_db,Quarterly report reviewed.
+2026-03-06 20:13:58,E5674,Operations,view,payroll,Viewed company policy.
+2026-02-23 23:57:13,E7977,IT,view,vpn,Submitted timesheet.
+2026-02-17 02:56:42,E3417,Engineering,delete,customer_db,Quarterly report reviewed.
+2026-02-16 23:31:58,E7999,HR,download,customer_db,Quarterly report reviewed.
+2026-03-10 14:19:28,E9596,Operations,view,email,Uploaded expense receipts.
+2026-03-10 03:25:51,E4688,Operations,logout,email,Quarterly report reviewed.
+2026-02-13 21:08:04,E4129,HR,upload,email,Downloaded team roster.
+2026-02-12 19:32:36,E4649,Marketing,download,customer_db,Edited client contact info.
+2026-02-19 01:14:49,E6338,Engineering,download,customer_db,Edited client contact info.
+2026-03-01 21:59:07,E3796,Operations,download,email,Quarterly report reviewed.
+2026-03-06 14:45:45,E6732,Engineering,view,customer_db,Updated project documentation.
+2026-02-14 07:04:54,E9637,HR,delete,payroll,Uploaded expense receipts.
+2026-03-09 14:18:14,E4111,IT,delete,payroll,Viewed company policy.
+2026-03-02 16:47:54,E8673,Engineering,logout,crm,Uploaded expense receipts.
+2026-03-08 21:45:21,E8769,Operations,download,email,Quarterly report reviewed.
+2026-03-01 21:28:48,E6818,Sales,download,fileserver,Credit Card: 2725-3229-8425-2991

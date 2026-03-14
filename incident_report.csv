@@ -1,0 +1,51 @@
+timestamp,employee_id,department,violation_type
+2026-02-27 19:48:36,E9522,HR,SSN Exposed
+2026-03-07 15:39:24,E8332,Engineering,Credit Card Exposed
+2026-02-23 03:44:52,E5440,IT,SSN Exposed
+2026-03-04 09:52:51,E7010,Operations,SSN Exposed
+2026-03-14 07:47:04,E6126,Operations,SSN Exposed
+2026-03-07 01:06:30,E8715,IT,Credit Card Exposed
+2026-03-07 10:52:00,E2583,Engineering,SSN Exposed
+2026-02-20 10:14:20,E6933,Marketing,SSN Exposed
+2026-02-19 16:48:01,E7599,Sales,Credit Card Exposed
+2026-02-14 01:25:45,E4867,HR,SSN Exposed
+2026-03-01 04:00:28,E4940,Sales,Credit Card Exposed
+2026-02-19 01:45:14,E5956,Finance,Credit Card Exposed
+2026-03-11 23:32:12,E1703,Engineering,SSN Exposed
+2026-02-18 20:57:52,E6375,Finance,SSN Exposed
+2026-02-28 03:36:36,E5865,Marketing,SSN Exposed
+2026-03-02 11:12:25,E2798,Operations,Credit Card Exposed
+2026-03-04 07:35:30,E5982,Operations,Credit Card Exposed
+2026-03-10 01:58:23,E8217,Finance,SSN Exposed
+2026-02-17 15:08:34,E4649,Engineering,SSN Exposed
+2026-02-13 16:19:33,E8031,Finance,Credit Card Exposed
+2026-02-23 14:44:22,E1342,Finance,Credit Card Exposed
+2026-02-26 19:54:35,E7848,Finance,Credit Card Exposed
+2026-02-22 03:09:39,E7138,Marketing,SSN Exposed
+2026-03-05 01:46:53,E1552,Marketing,SSN Exposed
+2026-03-11 06:24:15,E2150,Operations,Credit Card Exposed
+2026-03-11 17:37:04,E8342,Operations,SSN Exposed
+2026-03-05 00:11:12,E9697,Sales,Credit Card Exposed
+2026-02-15 03:27:02,E3644,IT,SSN Exposed
+2026-03-13 22:34:16,E3866,HR,SSN Exposed
+2026-03-04 03:35:31,E9728,IT,Credit Card Exposed
+2026-02-21 18:39:17,E3899,Operations,SSN Exposed
+2026-02-28 01:13:37,E5606,Operations,Credit Card Exposed
+2026-03-08 08:30:48,E6510,Marketing,Credit Card Exposed
+2026-02-16 14:17:03,E3621,Marketing,Credit Card Exposed
+2026-03-09 08:34:02,E6381,Marketing,Credit Card Exposed
+2026-02-23 16:50:37,E5196,IT,SSN Exposed
+2026-02-28 21:54:34,E4770,Engineering,SSN Exposed
+2026-02-20 04:35:33,E7056,Marketing,SSN Exposed
+2026-02-18 04:59:23,E1481,Engineering,SSN Exposed
+2026-03-12 19:20:40,E3153,Sales,Credit Card Exposed
+2026-03-12 12:28:48,E3209,Engineering,SSN Exposed
+2026-02-14 10:42:38,E8126,Sales,SSN Exposed
+2026-02-22 14:52:56,E3804,Finance,Credit Card Exposed
+2026-02-25 08:25:58,E6861,Finance,Credit Card Exposed
+2026-02-18 07:13:29,E5856,Finance,Credit Card Exposed
+2026-02-25 00:14:15,E4201,IT,Credit Card Exposed
+2026-02-28 08:33:00,E2953,Engineering,Credit Card Exposed
+2026-02-23 15:46:55,E6704,IT,SSN Exposed
+2026-03-07 16:39:09,E6275,Marketing,Credit Card Exposed
+2026-03-01 21:28:48,E6818,Sales,Credit Card Exposed
