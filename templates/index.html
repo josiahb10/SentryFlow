@@ -8,13 +8,29 @@
     <style>
         body {
             min-height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        /* Custom Dark Mode Styling */
+        [data-bs-theme="dark"] body {
             background: linear-gradient(135deg, #232526 0%, #414345 100%);
         }
-        .dashboard-header {
+        [data-bs-theme="dark"] .dashboard-header {
             background: rgba(33,37,41,0.85);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+        /* Custom Light Mode Styling */
+        [data-bs-theme="light"] body {
+            background: #f8f9fa;
+        }
+        [data-bs-theme="light"] .dashboard-header {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+        }
+        
+        .dashboard-header {
             border-radius: 1rem;
             padding: 2rem 2rem 1rem 2rem;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
         }
         .theme-toggle {
             position: absolute;
@@ -24,7 +40,7 @@
         .table thead th {
             border-bottom: 2px solid #ffc107;
         }
-        .table-striped>tbody>tr:nth-of-type(odd)>* {
+        [data-bs-theme="dark"] .table-striped>tbody>tr:nth-of-type(odd)>* {
             --bs-table-accent-bg: rgba(255,255,255,0.02);
         }
     </style>
@@ -36,20 +52,27 @@
     <div class="container mt-5">
         <div class="dashboard-header mb-4">
             <h1 class="text-warning mb-2">SentryFlow: Enterprise PII Incident Dashboard</h1>
-            <p class="lead text-light mb-4">Automated detection of unauthorized PII access in corporate logs.</p>
+            <p class="lead mb-4" style="color: var(--bs-body-color);">Automated detection of unauthorized PII access in corporate logs.</p>
             
-            <div class="p-3 bg-dark rounded border border-secondary mb-3">
+            <div class="p-3 rounded border mb-3" style="background-color: var(--bs-tertiary-bg); border-color: var(--bs-border-color) !important;">
                 <form action="/" method="POST" enctype="multipart/form-data" class="d-flex flex-wrap align-items-center gap-3">
-                    <input class="form-control text-bg-dark border-secondary" type="file" name="file" accept=".csv" required style="max-width: 350px;">
+                    <input class="form-control" type="file" name="file" accept=".csv" required style="max-width: 350px;">
                     <button class="btn btn-warning fw-bold" type="submit"><i class="bi bi-shield-lock"></i> Scan Uploaded Logs</button>
-                    <a href="/download_sample" class="btn btn-outline-info ms-md-auto">
-                        <i class="bi bi-download"></i> Download Sample Data
-                    </a>
+                    
+                    <div class="ms-md-auto d-flex gap-2">
+                        <a href="/download_sample" class="btn btn-outline-info">
+                            <i class="bi bi-download"></i> Sample Data
+                        </a>
+                        <a href="/" class="btn btn-outline-danger">
+                            <i class="bi bi-trash"></i> Clear Dashboard
+                        </a>
+                    </div>
                 </form>
             </div>
-            </div>
+
+        </div>
         <div class="table-responsive shadow rounded">
-            <table class="table table-dark table-striped table-hover align-middle mb-0">
+            <table class="table table-striped table-hover align-middle mb-0">
                 <thead>
                     <tr>
                         <th>Timestamp</th>
@@ -69,7 +92,10 @@
                     {% endfor %}
                     {% if not incidents %}
                     <tr>
-                        <td colspan="4" class="text-center text-muted py-4">No PII incidents detected or no data loaded.</td>
+                        <td colspan="4" class="text-center text-muted py-5">
+                            <i class="bi bi-inbox fs-1 d-block mb-2"></i>
+                            Dashboard is clear. Upload a log file to begin scanning.
+                        </td>
                     </tr>
                     {% endif %}
                 </tbody>
@@ -78,7 +104,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
     <script>
-        // Theme toggle logic
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const html = document.documentElement;

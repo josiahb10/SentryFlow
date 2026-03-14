@@ -5,7 +5,6 @@ import io
 
 app = Flask(__name__)
 
-# Bring your scanner's regex engine directly into the web app
 SSN_PATTERN = re.compile(r'\b\d{3}-\d{2}-\d{4}\b')
 CC_PATTERN = re.compile(r'\b(?:\d[ -]*?){16}\b')
 
@@ -13,14 +12,12 @@ CC_PATTERN = re.compile(r'\b(?:\d[ -]*?){16}\b')
 def index():
     incidents = []
     
-    # If a recruiter uploads a file, scan it in real-time
     if request.method == 'POST':
         if 'file' not in request.files:
             return "No file uploaded", 400
         
         file = request.files['file']
         if file.filename != '':
-            # Read the uploaded file directly from memory (safe for cloud hosting)
             stream = io.StringIO(file.stream.read().decode("UTF8"), newline=None)
             reader = csv.DictReader(stream)
             
@@ -37,20 +34,9 @@ def index():
                     
             return render_template('index.html', incidents=incidents)
 
-    # If it's just a normal page visit (GET request), show the default incident report
-    try:
-        with open('incident_report.csv', mode='r', encoding='utf-8') as file:
-            reader = csv.reader(file)
-            next(reader, None)  # Skip header
-            for row in reader:
-                if len(row) >= 4:
-                    incidents.append([row[0], row[1], row[2], row[-1]])
-    except FileNotFoundError:
-        pass
+    # For a normal visit (GET request) or when clicking "Clear", return an empty list!
+    return render_template('index.html', incidents=[])
 
-    return render_template('index.html', incidents=incidents)
-
-# Route to let users download the dummy logs to test the app
 @app.route('/download_sample')
 def download_sample():
     try:
