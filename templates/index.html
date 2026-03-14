@@ -36,8 +36,18 @@
     <div class="container mt-5">
         <div class="dashboard-header mb-4">
             <h1 class="text-warning mb-2">SentryFlow: Enterprise PII Incident Dashboard</h1>
-            <p class="lead text-light mb-0">Automated detection of unauthorized PII access in corporate logs.</p>
-        </div>
+            <p class="lead text-light mb-4">Automated detection of unauthorized PII access in corporate logs.</p>
+            
+            <div class="p-3 bg-dark rounded border border-secondary mb-3">
+                <form action="/" method="POST" enctype="multipart/form-data" class="d-flex flex-wrap align-items-center gap-3">
+                    <input class="form-control text-bg-dark border-secondary" type="file" name="file" accept=".csv" required style="max-width: 350px;">
+                    <button class="btn btn-warning fw-bold" type="submit"><i class="bi bi-shield-lock"></i> Scan Uploaded Logs</button>
+                    <a href="/download_sample" class="btn btn-outline-info ms-md-auto">
+                        <i class="bi bi-download"></i> Download Sample Data
+                    </a>
+                </form>
+            </div>
+            </div>
         <div class="table-responsive shadow rounded">
             <table class="table table-dark table-striped table-hover align-middle mb-0">
                 <thead>
@@ -57,6 +67,11 @@
                         <td><span class="badge bg-danger">{{ row.3 }}</span></td>
                     </tr>
                     {% endfor %}
+                    {% if not incidents %}
+                    <tr>
+                        <td colspan="4" class="text-center text-muted py-4">No PII incidents detected or no data loaded.</td>
+                    </tr>
+                    {% endif %}
                 </tbody>
             </table>
         </div>
@@ -68,7 +83,6 @@
         const themeIcon = document.getElementById('themeIcon');
         const html = document.documentElement;
 
-        // Set initial theme from localStorage
         if (localStorage.getItem('bsTheme') === 'light') {
             html.setAttribute('data-bs-theme', 'light');
             themeIcon.className = 'bi bi-sun';
@@ -90,7 +104,6 @@
             }
         });
     </script>
-    <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
 </html>
