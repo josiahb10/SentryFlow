@@ -187,7 +187,7 @@ SentryFlow was built to demonstrate how automated log analysis can improve **ent
 
 ---
 
-## 👨‍💻 Developer (Go WVU! 🏔️)
+## 👨‍💻 Developer 
 
 - **Josiah Brown** – Full-Stack Developer & Cybersecurity/MIS Student  
 - Email: bjosiah52@gmail.com  
