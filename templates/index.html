@@ -33,9 +33,23 @@
             padding: 2rem 2rem 1rem 2rem;
         }
         .theme-toggle {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+            padding: 0.5rem 0.75rem;
+        }
+        [data-bs-theme="dark"] .theme-toggle {
+            background-color: rgba(255,193,7,0.1);
+            border-color: rgba(255,193,7,0.3);
+        }
+        [data-bs-theme="light"] .theme-toggle {
+            background-color: rgba(255,193,7,0.05);
+            border-color: rgba(255,193,7,0.3);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
         }
         .table thead th {
             border-bottom: 2px solid #ffc107;
@@ -80,13 +94,15 @@
     </style>
 </head>
 <body>
-    <button class="btn btn-outline-light theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span id="themeIcon" class="bi bi-moon"></span> Toggle Theme
-    </button>
     <div class="container mt-5">
         <div class="dashboard-header mb-4">
-            <h1 class="text-warning mb-2">SentryFlow: Enterprise PII Incident Dashboard</h1>
-            <p class="lead mb-4" style="color: var(--bs-body-color);">Automated detection of unauthorized PII access in corporate logs.</p>
+            <div class="header-top">
+                <h1 class="text-warning mb-0">SentryFlow: Enterprise PII Incident Dashboard</h1>
+                <button class="btn btn-outline-warning theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon" class="bi bi-moon"></span>
+                </button>
+            </div>
+            <p class="lead mb-4 mt-2" style="color: var(--bs-body-color);">Automated detection of unauthorized PII access in corporate logs.</p>
             
             <div class="p-3 rounded border mb-3" style="background-color: var(--bs-tertiary-bg); border-color: var(--bs-border-color) !important;">
                 <form action="/" method="POST" enctype="multipart/form-data" class="d-flex flex-wrap align-items-center gap-3">
@@ -126,7 +142,7 @@
                         <div class="card-value">
                             {% set ssn_count = 0 %}
                             {% for row in incidents %}
-                                {% if row.3 == 'SSN Exposed' %}
+                                {% if row[3] == 'SSN Exposed' %}
                                     {% set ssn_count = ssn_count + 1 %}
                                 {% endif %}
                             {% endfor %}
@@ -144,7 +160,7 @@
                         <div class="card-value">
                             {% set cc_count = 0 %}
                             {% for row in incidents %}
-                                {% if row.3 == 'Credit Card Exposed' %}
+                                {% if row[3] == 'Credit Card Exposed' %}
                                     {% set cc_count = cc_count + 1 %}
                                 {% endif %}
                             {% endfor %}
