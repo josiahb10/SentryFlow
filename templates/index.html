@@ -28,7 +28,7 @@
             border: 1px solid #dee2e6;
             box-shadow: 0 4px 24px rgba(0,0,0,0.05);
         }
-        
+
         .dashboard-header {
             border-radius: 1rem;
             padding: 2rem 2rem 1rem 2rem;
@@ -92,9 +92,173 @@
             color: #ffc107;
             line-height: 1;
         }
+        /* Card icons */
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.7;
+        }
+        .card-icon-total { color: #ffc107; }
+        .card-icon-ssn { color: #e67e22; }
+        .card-icon-cc { color: #8e44ad; }
+        /* Violation badge colors */
+        .badge-ssn {
+            background-color: #e67e22 !important;
+            color: #fff !important;
+        }
+        .badge-cc {
+            background-color: #8e44ad !important;
+            color: #fff !important;
+        }
+        /* Violation-type row coloring */
+        .row-ssn td:first-child {
+            border-left: 4px solid #e67e22;
+        }
+        .row-cc td:first-child {
+            border-left: 4px solid #8e44ad;
+        }
+        .violation-row {
+            transition: background-color 0.15s ease;
+        }
+        [data-bs-theme="dark"] .row-ssn:hover > * {
+            background-color: rgba(230, 126, 34, 0.08) !important;
+        }
+        [data-bs-theme="dark"] .row-cc:hover > * {
+            background-color: rgba(142, 68, 173, 0.08) !important;
+        }
+        [data-bs-theme="light"] .row-ssn:hover > * {
+            background-color: rgba(230, 126, 34, 0.06) !important;
+        }
+        [data-bs-theme="light"] .row-cc:hover > * {
+            background-color: rgba(142, 68, 173, 0.06) !important;
+        }
+        .violation-row td:first-child {
+            padding-left: 12px;
+        }
+        /* Department breakdown bar */
+        .dept-bar-container {
+            border-radius: 0.5rem;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        [data-bs-theme="dark"] .dept-bar-container {
+            background: rgba(33,37,41,0.6);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        [data-bs-theme="light"] .dept-bar-container {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+        }
+        .dept-bar-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.8;
+            margin-bottom: 0.75rem;
+        }
+        .dept-bar {
+            display: flex;
+            height: 28px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 0.75rem;
+        }
+        .dept-bar-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 6px;
+            min-width: 0;
+        }
+        .dept-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            font-size: 0.8rem;
+        }
+        .dept-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .dept-legend-swatch {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        /* Table search input */
+        .search-wrapper {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        .search-wrapper .bi-search {
+            position: absolute;
+            left: 0.85rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .table-search {
+            border-radius: 0.5rem;
+            padding: 0.6rem 1rem 0.6rem 2.5rem;
+            font-size: 0.9rem;
+            width: 100%;
+            max-width: 400px;
+        }
+        .no-results-row { display: none; }
+        .no-results-row.visible { display: table-row; }
+        /* Footer */
+        .sf-footer {
+            text-align: center;
+            padding: 2rem 0 1.5rem 0;
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-top: 3rem;
+        }
+        .sf-footer .footer-brand {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .sf-footer .footer-divider {
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            margin: 0 0.6rem;
+            vertical-align: middle;
+            opacity: 0.4;
+        }
+        [data-bs-theme="dark"] .sf-footer .footer-divider { background-color: #fff; }
+        [data-bs-theme="light"] .sf-footer .footer-divider { background-color: #212529; }
     </style>
 </head>
 <body>
+
+{# Precompute counts to avoid duplication #}
+{% set total_count = incidents|length %}
+{% set ns_ssn = namespace(count=0) %}
+{% for row in incidents %}
+    {% if row[3] == 'SSN Exposed' %}
+        {% set ns_ssn.count = ns_ssn.count + 1 %}
+    {% endif %}
+{% endfor %}
+{% set ssn_count = ns_ssn.count %}
+{% set ns_cc = namespace(count=0) %}
+{% for row in incidents %}
+    {% if row[3] == 'Credit Card Exposed' %}
+        {% set ns_cc.count = ns_cc.count + 1 %}
+    {% endif %}
+{% endfor %}
+{% set cc_count = ns_cc.count %}
+
     <div class="container mt-5">
         <div class="dashboard-header mb-4">
             <div class="header-top">
@@ -104,12 +268,12 @@
                 </button>
             </div>
             <p class="lead mb-4 mt-2" style="color: var(--bs-body-color);">Automated detection of unauthorized PII access in corporate logs.</p>
-            
+
             <div class="p-3 rounded border mb-3" style="background-color: var(--bs-tertiary-bg); border-color: var(--bs-border-color) !important;">
                 <form action="/" method="POST" enctype="multipart/form-data" class="d-flex flex-wrap align-items-center gap-3">
                     <input class="form-control" type="file" name="file" accept=".csv" required style="max-width: 350px;">
                     <button class="btn btn-warning fw-bold" type="submit"><i class="bi bi-shield-lock"></i> Scan Uploaded Logs</button>
-                    
+
                     <div class="ms-md-auto d-flex gap-2">
                         <a href="/download_sample" class="btn btn-outline-info">
                             <i class="bi bi-download"></i> Sample Data
@@ -120,57 +284,92 @@
                     </div>
                 </form>
             </div>
-
         </div>
 
         <!-- Summary Cards Row -->
         <div class="row mb-4 g-3">
-            <!-- Total Incidents Card -->
             <div class="col-md-4">
                 <div class="card summary-card h-100">
                     <div class="card-body text-center py-4">
+                        <div class="card-icon card-icon-total"><i class="bi bi-shield-exclamation"></i></div>
                         <h6 class="card-title">Total Incidents</h6>
-                        <div class="card-value">{{ incidents|length }}</div>
+                        <div class="card-value" data-countup="{{ total_count }}">{{ total_count }}</div>
                     </div>
                 </div>
             </div>
-
-            <!-- SSNs Exposed Card -->
             <div class="col-md-4">
                 <div class="card summary-card h-100">
                     <div class="card-body text-center py-4">
+                        <div class="card-icon card-icon-ssn"><i class="bi bi-person-badge"></i></div>
                         <h6 class="card-title">SSNs Exposed</h6>
-                        <div class="card-value">
-                            {% set ns = namespace(count=0) %}
-                            {% for row in incidents %}
-                                {% if row[3] == 'SSN Exposed' %}
-                                    {% set ns.count = ns.count + 1 %}
-                                {% endif %}
-                            {% endfor %}
-                            {{ ns.count }}
-                        </div>
+                        <div class="card-value" data-countup="{{ ssn_count }}">{{ ssn_count }}</div>
                     </div>
                 </div>
             </div>
-
-            <!-- Credit Cards Exposed Card -->
             <div class="col-md-4">
                 <div class="card summary-card h-100">
                     <div class="card-body text-center py-4">
+                        <div class="card-icon card-icon-cc"><i class="bi bi-credit-card"></i></div>
                         <h6 class="card-title">Credit Cards Exposed</h6>
-                        <div class="card-value">
-                            {% set ns = namespace(count=0) %}
-                            {% for row in incidents %}
-                                {% if row[3] == 'Credit Card Exposed' %}
-                                    {% set ns.count = ns.count + 1 %}
-                                {% endif %}
-                            {% endfor %}
-                            {{ ns.count }}
-                        </div>
+                        <div class="card-value" data-countup="{{ cc_count }}">{{ cc_count }}</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Department Breakdown Bar -->
+        {% if incidents %}
+        {% set dept_colors = ['#3498db', '#e74c3c', '#2ecc71', '#f39c12', '#9b59b6', '#1abc9c', '#e67e22', '#34495e', '#d35400', '#16a085'] %}
+        {% set ns_depts = namespace(seen=[], counts=[]) %}
+        {% for row in incidents %}
+            {% if row[2] not in ns_depts.seen %}
+                {% set ns_depts.seen = ns_depts.seen + [row[2]] %}
+                {% set ns_depts.counts = ns_depts.counts + [1] %}
+            {% else %}
+                {% set ns_new = namespace(counts=[]) %}
+                {% for d in ns_depts.seen %}
+                    {% if d == row[2] %}
+                        {% set ns_new.counts = ns_new.counts + [ns_depts.counts[loop.index0] + 1] %}
+                    {% else %}
+                        {% set ns_new.counts = ns_new.counts + [ns_depts.counts[loop.index0]] %}
+                    {% endif %}
+                {% endfor %}
+                {% set ns_depts.counts = ns_new.counts %}
+            {% endif %}
+        {% endfor %}
+        <div class="dept-bar-container">
+            <div class="dept-bar-title"><i class="bi bi-building me-1"></i> Incidents by Department</div>
+            <div class="dept-bar">
+                {% for dept in ns_depts.seen %}
+                {% set count = ns_depts.counts[loop.index0] %}
+                {% set pct = (count / total_count * 100) | round(1) %}
+                <div class="dept-bar-segment"
+                     style="flex-basis: {{ pct }}%; background-color: {{ dept_colors[loop.index0 % dept_colors|length] }};"
+                     title="{{ dept }}: {{ count }} ({{ pct }}%)">
+                    {% if pct > 8 %}{{ dept }}{% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="dept-legend">
+                {% for dept in ns_depts.seen %}
+                {% set count = ns_depts.counts[loop.index0] %}
+                <span class="dept-legend-item">
+                    <span class="dept-legend-swatch" style="background-color: {{ dept_colors[loop.index0 % dept_colors|length] }};"></span>
+                    {{ dept }}: {{ count }}
+                </span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Table Search -->
+        {% if incidents %}
+        <div class="search-wrapper">
+            <i class="bi bi-search"></i>
+            <input type="text" id="tableSearch" class="form-control table-search"
+                   placeholder="Search incidents by timestamp, employee, department, or type...">
+        </div>
+        {% endif %}
 
         <div class="table-responsive shadow rounded">
             <table class="table table-striped table-hover align-middle mb-0">
@@ -184,11 +383,20 @@
                 </thead>
                 <tbody>
                     {% for row in incidents %}
-                    <tr>
+                    <tr data-searchable class="violation-row {% if row[3] == 'SSN Exposed' %}row-ssn{% else %}row-cc{% endif %}">
                         <td>{{ row[0] }}</td>
                         <td>{{ row[1] }}</td>
                         <td>{{ row[2] }}</td>
-                        <td><span class="badge bg-danger">{{ row[3] }}</span></td>
+                        <td>
+                            <span class="badge {% if row[3] == 'SSN Exposed' %}badge-ssn{% else %}badge-cc{% endif %}">
+                                {% if row[3] == 'SSN Exposed' %}
+                                    <i class="bi bi-person-badge me-1"></i>
+                                {% else %}
+                                    <i class="bi bi-credit-card me-1"></i>
+                                {% endif %}
+                                {{ row[3] }}
+                            </span>
+                        </td>
                     </tr>
                     {% endfor %}
                     {% if not incidents %}
@@ -203,7 +411,21 @@
             </table>
         </div>
     </div>
+
+    <footer class="sf-footer">
+        <span class="footer-brand">SentryFlow</span>
+        <span class="footer-divider"></span>
+        v1.0.0
+        <span class="footer-divider"></span>
+        Automated PII Detection System
+        <br>
+        <small class="mt-1 d-inline-block" style="opacity: 0.7;">
+            <i class="bi bi-lock-fill me-1"></i>Enterprise Security Dashboard
+        </small>
+    </footer>
+
     <script>
+        // Theme toggle
         const themeToggle = document.getElementById('themeToggle');
         const themeIcon = document.getElementById('themeIcon');
         const html = document.documentElement;
@@ -225,6 +447,70 @@
                 localStorage.setItem('bsTheme', 'dark');
             }
         });
+
+        // Animated count-up effect
+        function animateCountUp(element, target, duration) {
+            if (target === 0) return;
+            var start = 0;
+            var startTime = null;
+            function step(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = Math.min((timestamp - startTime) / duration, 1);
+                var eased = 1 - Math.pow(1 - progress, 3);
+                element.textContent = Math.floor(eased * target);
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            element.textContent = '0';
+            requestAnimationFrame(step);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.card-value[data-countup]').forEach(function(el) {
+                var target = parseInt(el.getAttribute('data-countup').trim(), 10);
+                if (!isNaN(target) && target > 0) {
+                    animateCountUp(el, target, 1500);
+                }
+            });
+        });
+
+        // Client-side table search/filter
+        var searchInput = document.getElementById('tableSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                var query = this.value.toLowerCase().trim();
+                var tbody = document.querySelector('.table-responsive table tbody');
+                var rows = tbody.querySelectorAll('tr[data-searchable]');
+                var visibleCount = 0;
+
+                rows.forEach(function(row) {
+                    var text = row.textContent.toLowerCase();
+                    if (query === '' || text.indexOf(query) !== -1) {
+                        row.style.display = '';
+                        visibleCount++;
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                var noResultsRow = tbody.querySelector('.no-results-row');
+                if (visibleCount === 0 && query !== '') {
+                    if (!noResultsRow) {
+                        noResultsRow = document.createElement('tr');
+                        noResultsRow.className = 'no-results-row visible';
+                        noResultsRow.innerHTML = '<td colspan="4" class="text-center text-muted py-4"><i class="bi bi-search fs-3 d-block mb-2"></i>No incidents match your search.</td>';
+                        tbody.appendChild(noResultsRow);
+                    } else {
+                        noResultsRow.classList.add('visible');
+                    }
+                } else if (noResultsRow) {
+                    noResultsRow.classList.remove('visible');
+                }
+            });
+        }
     </script>
 </body>
 </html>
