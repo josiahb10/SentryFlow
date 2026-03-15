@@ -4,35 +4,38 @@
 
 SentryFlow is a web application that analyzes uploaded corporate access logs to detect if sensitive Personally Identifiable Information (PII) has been exposed. Built to bridge the gap between Management Information Systems (MIS) and Cybersecurity, it functions as an automated auditing tool that flags security violations in real-time.
 
-### 🚀 Features
+## 🚀 Features
 
-* **Real-time Log Scanning:** Upload CSV access logs and get instant analysis.
-* **Smart Data Filtering:** Automatically detects exposed Social Security Numbers and Credit Cards.
-* **Interactive Dashboard:** View localized security incidents with dynamic metric summary cards.
-* **Data Management:** Download sample enterprise logs to test, or clear the dashboard instantly.
-* **Modern UI:** Clean, responsive design powered by Bootstrap 5.
-* **Theme Toggling:** Seamless switching between Dark Mode and Light Mode.
+- **Real-time Log Scanning**: Upload CSV access logs and get instant analysis
+- **Smart Data Filtering**: Automatically detects exposed Social Security Numbers and Credit Cards
+- **Interactive Dashboard**: View localized security incidents with dynamic metric summary cards
+- **Data Management**: Download sample enterprise logs to test, or clear the dashboard instantly
+- **Modern UI**: Clean, responsive design powered by Bootstrap 5
+- **Theme Toggling**: Seamless switching between Dark Mode and Light Mode
 
-### 🛠️ Technology Stack
+## 🛠️ Technology Stack
 
-* **Frontend:** HTML5, CSS3, Bootstrap 5
-* **Backend:** Python Flask
-* **Data Processing:** Python `csv` and `re` (Regular Expressions) modules
-* **Deployment:** Gunicorn, Render
-* **Analysis:** Regex pattern matching for PII data spillage
+- **Frontend**: HTML5, CSS3, Bootstrap 5
+- **Backend**: Python Flask
+- **Data Processing**: Python `csv` and `re` (Regular Expressions) modules
+- **Deployment**: Gunicorn, Render
+- **Analysis**: Regex pattern matching for PII data spillage
 
-### 📋 Prerequisites
+## 📋 Prerequisites
 
-* Python 3.7+ installed on your system
-* `pip` (Python package manager)
-* A modern web browser
+- **Python 3.7+** installed on your system
+- **pip** (Python package manager)
+- A modern web browser
 
-### 🔧 Installation & Setup
+## 🔧 Installation & Setup
 
-Clone the repository:
-```bash
-git clone [https://github.com/josiahb10/SentryFlow.git](https://github.com/josiahb10/SentryFlow.git)
-cd SentryFlow
+1. **Clone the repository**:
+   ```bash
+   git clone [https://github.com/josiahb10/SentryFlow.git](https://github.com/josiahb10/SentryFlow.git)
+   cd SentryFlow
+Run the application:
+
+Bash
 # Set up environment (Windows)
 python -m venv venv
 .\venv\Scripts\activate
@@ -42,13 +45,14 @@ pip install -r requirements.txt
 
 # Run the app
 python app.py
+Open your browser and go to:
 
+http://localhost:5000
 🎯 How It Works
 Upload & Analysis Flow
+Generate/Upload Logs: Click "Download Sample Data" to get a generated CSV, or upload your own corporate logs
 
-Generate/Upload Logs: Click "Download Sample Data" to get a generated CSV, or upload your own corporate logs.
-
-PII Detection: The system analyzes the data_payload column for unauthorized sensitive information.
+PII Detection: System analyzes the data_payload column for unauthorized sensitive information
 
 Smart Filtering:
 
@@ -56,17 +60,15 @@ Smart Filtering:
 
 ❌ Exposed PII → Flagged as a critical security incident
 
-Dashboard Render: Successfully scanned incidents populate the interactive table and update the metric cards.
+Dashboard Render: Successfully scanned incidents populate the interactive table and update the metric cards
 
 Detection Methods
+SSN Analysis: Checks for standard Social Security Number formatting (XXX-XX-XXXX) using Regex
 
-SSN Analysis: Checks for standard Social Security Number formatting (XXX-XX-XXXX) using Regex.
-
-Credit Card Signatures: Identifies 16-digit numeric patterns typical of financial data spillage.
+Credit Card Signatures: Identifies 16-digit numeric patterns typical of financial data spillage
 
 📱 User Interface
 Main Dashboard (/)
-
 Professional SentryFlow title with dynamic theme-based text
 
 File upload area with inline action buttons
@@ -115,7 +117,7 @@ Integration capabilities with enterprise SIEM tools (e.g., Splunk)
 🏆 Portfolio Project
 Built to address the growing challenge of data privacy compliance in corporate environments. As enterprises handle massive amounts of log data, automated detection systems like SentryFlow are required to catch PII spillage, maintain compliance (GDPR/CCPA), and reduce the manual workload of IT and Security teams.
 
-👥 Developer - WVU 🏔️
+👥 Developer (Go WVU! 🏔️)
 Josiah Brown - Full-Stack Developer & Cybersecurity/MIS Student, bjosiah52@gmail.com | LinkedIn
 
 📄 License
