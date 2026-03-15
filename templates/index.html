@@ -43,6 +43,40 @@
         [data-bs-theme="dark"] .table-striped>tbody>tr:nth-of-type(odd)>* {
             --bs-table-accent-bg: rgba(255,255,255,0.02);
         }
+        /* Summary Cards Styling */
+        .summary-card {
+            border: none;
+            border-radius: 0.75rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .summary-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important;
+        }
+        [data-bs-theme="dark"] .summary-card {
+            background: linear-gradient(135deg, rgba(255,193,7,0.1) 0%, rgba(255,193,7,0.05) 100%);
+            border: 1px solid rgba(255,193,7,0.2);
+            color: #fff;
+        }
+        [data-bs-theme="light"] .summary-card {
+            background: linear-gradient(135deg, rgba(255,193,7,0.05) 0%, rgba(255,193,7,0.02) 100%);
+            border: 1px solid rgba(255,193,7,0.3);
+            color: #212529;
+        }
+        .summary-card .card-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.85;
+            margin-bottom: 1rem;
+        }
+        .summary-card .card-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffc107;
+            line-height: 1;
+        }
     </style>
 </head>
 <body>
@@ -71,6 +105,56 @@
             </div>
 
         </div>
+
+        <!-- Summary Cards Row -->
+        <div class="row mb-4 g-3">
+            <!-- Total Incidents Card -->
+            <div class="col-md-4">
+                <div class="card summary-card h-100">
+                    <div class="card-body text-center py-4">
+                        <h6 class="card-title">Total Incidents</h6>
+                        <div class="card-value">{{ incidents|length }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SSNs Exposed Card -->
+            <div class="col-md-4">
+                <div class="card summary-card h-100">
+                    <div class="card-body text-center py-4">
+                        <h6 class="card-title">SSNs Exposed</h6>
+                        <div class="card-value">
+                            {% set ssn_count = 0 %}
+                            {% for row in incidents %}
+                                {% if row.3 == 'SSN Exposed' %}
+                                    {% set ssn_count = ssn_count + 1 %}
+                                {% endif %}
+                            {% endfor %}
+                            {{ ssn_count }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credit Cards Exposed Card -->
+            <div class="col-md-4">
+                <div class="card summary-card h-100">
+                    <div class="card-body text-center py-4">
+                        <h6 class="card-title">Credit Cards Exposed</h6>
+                        <div class="card-value">
+                            {% set cc_count = 0 %}
+                            {% for row in incidents %}
+                                {% if row.3 == 'Credit Card Exposed' %}
+                                    {% set cc_count = cc_count + 1 %}
+                                {% endif %}
+                            {% endfor %}
+                            {{ cc_count }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="table-responsive shadow rounded">
             <table class="table table-striped table-hover align-middle mb-0">
                 <thead>
