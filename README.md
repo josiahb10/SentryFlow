@@ -1,17 +1,21 @@
 # SentryFlow 🛡️📊
 
-**Enterprise PII Incident Dashboard**
+**Enterprise PII Incident Detection Dashboard**
 
-SentryFlow is a web application that analyzes uploaded corporate access logs to detect if sensitive Personally Identifiable Information (PII) has been exposed. Built to bridge the gap between Management Information Systems (MIS) and Cybersecurity, it functions as an automated auditing tool that flags security violations in real-time.
+SentryFlow is a web application that analyzes uploaded corporate access logs to detect if sensitive **Personally Identifiable Information (PII)** has been exposed. Built to bridge the gap between **Management Information Systems (MIS)** and **Cybersecurity**, it functions as an automated auditing tool that flags security violations in real time.
+
+---
 
 ## 🚀 Features
 
 - **Real-time Log Scanning**: Upload CSV access logs and get instant analysis
-- **Smart Data Filtering**: Automatically detects exposed Social Security Numbers and Credit Cards
-- **Interactive Dashboard**: View localized security incidents with dynamic metric summary cards
-- **Data Management**: Download sample enterprise logs to test, or clear the dashboard instantly
-- **Modern UI**: Clean, responsive design powered by Bootstrap 5
+- **Smart PII Detection**: Automatically detects exposed Social Security Numbers and Credit Card numbers
+- **Interactive Security Dashboard**: View detected security incidents with dynamic metric summary cards
+- **Data Management**: Download sample enterprise logs to test or clear the dashboard instantly
+- **Modern UI**: Clean, responsive interface built with Bootstrap 5
 - **Theme Toggling**: Seamless switching between Dark Mode and Light Mode
+
+---
 
 ## 🛠️ Technology Stack
 
@@ -19,7 +23,9 @@ SentryFlow is a web application that analyzes uploaded corporate access logs to 
 - **Backend**: Python Flask
 - **Data Processing**: Python `csv` and `re` (Regular Expressions) modules
 - **Deployment**: Gunicorn, Render
-- **Analysis**: Regex pattern matching for PII data spillage
+- **Analysis**: Regex pattern detection for PII data exposure
+
+---
 
 ## 📋 Prerequisites
 
@@ -27,100 +33,172 @@ SentryFlow is a web application that analyzes uploaded corporate access logs to 
 - **pip** (Python package manager)
 - A modern web browser
 
+---
+
 ## 🔧 Installation & Setup
 
-1. **Clone the repository**:
-   ```bash
-   git clone [https://github.com/josiahb10/SentryFlow.git](https://github.com/josiahb10/SentryFlow.git)
-   cd SentryFlow
-Run the application:
+### 1. Clone the repository
 
-Bash
-# Set up environment (Windows)
+```bash
+git clone https://github.com/josiahb10/SentryFlow.git
+cd SentryFlow
+```
+
+### 2. Set up the environment and run the application
+
+```bash
+# Create virtual environment (Windows)
 python -m venv venv
 .\venv\Scripts\activate
 
-# Install requirements
+# Install dependencies
 pip install -r requirements.txt
 
-# Run the app
+# Run the application
 python app.py
-Open your browser and go to:
+```
 
+### 3. Open your browser and go to
+
+```
 http://localhost:5000
-🎯 How It Works
-Upload & Analysis Flow
-Generate/Upload Logs: Click "Download Sample Data" to get a generated CSV, or upload your own corporate logs
+```
 
-PII Detection: System analyzes the data_payload column for unauthorized sensitive information
+---
 
-Smart Filtering:
+## 🎯 How It Works
 
-✅ Clean Logs → Ignored to reduce analyst fatigue
+### Upload & Analysis Flow
 
-❌ Exposed PII → Flagged as a critical security incident
+1. **Upload Logs**
+   - Upload your own corporate CSV log file
+   - Or download generated sample logs
 
-Dashboard Render: Successfully scanned incidents populate the interactive table and update the metric cards
+2. **PII Detection**
+   - The system analyzes the `data_payload` column for sensitive information exposure
 
-Detection Methods
-SSN Analysis: Checks for standard Social Security Number formatting (XXX-XX-XXXX) using Regex
+3. **Smart Filtering**
 
-Credit Card Signatures: Identifies 16-digit numeric patterns typical of financial data spillage
+- ✅ **Clean logs** → Ignored to reduce analyst fatigue  
+- ❌ **PII detected** → Flagged as a critical security incident
 
-📱 User Interface
-Main Dashboard (/)
-Professional SentryFlow title with dynamic theme-based text
+4. **Dashboard Update**
+   - Flagged incidents populate the dashboard table and update the metric cards
 
-File upload area with inline action buttons
+### Detection Methods
 
-Dynamic metric cards displaying Total Incidents, SSNs Exposed, and Credit Cards Exposed
+- **SSN Analysis**
+  - Detects Social Security Numbers using the pattern:
 
-Data table with timestamp, employee ID, department, and highlighted violation badges
+```
+XXX-XX-XXXX
+```
 
-Dark/Light mode toggle switch
+- **Credit Card Detection**
+  - Identifies 16-digit numeric sequences typical of financial data exposure
 
-📁 Project Structure
-Plaintext
+---
+
+## 📱 User Interface
+
+### Main Dashboard (`/`)
+
+- Professional **SentryFlow** dashboard header
+- CSV file upload interface with action buttons
+
+**Dynamic metric cards displaying:**
+
+- Total Incidents
+- SSNs Exposed
+- Credit Cards Exposed
+
+**Security incident table showing:**
+
+- Timestamp
+- Employee ID
+- Department
+- Violation badges
+
+- Dark Mode / Light Mode toggle
+
+---
+
+## 📁 Project Structure
+
+```
 SentryFlow/
 ├── templates/
 │   └── index.html          # Main dashboard interface
-├── app.py                  # Flask server with Regex detection
-├── generate_logs.py        # Dummy enterprise log generator
+├── app.py                  # Flask server with PII detection logic
+├── generate_logs.py        # Enterprise log generator for testing
 ├── requirements.txt        # Python dependencies
-├── .gitignore              # Git ignore file for venv
-└── README.md               # This documentation
-🎨 Design Features
-Color Scheme: Dark Mode (Linear gradient slate/charcoal + Warning Yellow accents) and Light Mode (Clean white/gray)
+├── .gitignore              # Ignore virtual environment files
+└── README.md               # Project documentation
+```
 
-Framework: Bootstrap 5 for consistent, enterprise-grade interface elements
+---
 
-Icons: Bootstrap Icons (bi-shield-lock, bi-download, bi-trash)
+## 🎨 Design Features
 
-Responsive: Mobile-friendly table and flexbox forms
+### Color Scheme
 
-🚀 API Endpoints
-GET / - Main dashboard interface
+- **Dark Mode**: Slate/Charcoal + Warning Yellow
+- **Light Mode**: Clean white and gray
 
-POST / - Log file upload and analysis endpoint
+### Framework
 
-GET /download_sample - Serves the enterprise_access_logs.csv test file
+- Bootstrap 5 for consistent enterprise UI components
 
-🔮 Future Enhancements
-SQL Database integration for long-term incident storage
+### Icons
 
-User authentication and role-based access control (RBAC)
+- Bootstrap Icons
+- `bi-shield-lock`
+- `bi-download`
+- `bi-trash`
 
-Export functionality for compliance reporting (PDF/CSV)
+### Responsive Design
 
-Integration capabilities with enterprise SIEM tools (e.g., Splunk)
+- Mobile-friendly tables
+- Flexible form layouts
 
-🏆 Portfolio Project
-Built to address the growing challenge of data privacy compliance in corporate environments. As enterprises handle massive amounts of log data, automated detection systems like SentryFlow are required to catch PII spillage, maintain compliance (GDPR/CCPA), and reduce the manual workload of IT and Security teams.
+---
 
-👥 Developer (Go WVU! 🏔️)
-Josiah Brown - Full-Stack Developer & Cybersecurity/MIS Student, bjosiah52@gmail.com | LinkedIn
+## 🚀 API Endpoints
 
-📄 License
-MIT License - Built for educational and portfolio purposes.
+- `GET /` – Main dashboard interface
+- `POST /` – Log file upload and analysis
+- `GET /download_sample` – Download generated enterprise access logs
 
-⚠️ Note: This is a functional prototype demonstrating automated PII detection concepts. For production deployment in a real enterprise environment, implement robust authentication, encrypted databases, and enhanced server security measures.
+---
+
+## 🔮 Future Enhancements
+
+- SQL database integration for persistent incident storage
+- User authentication and role-based access control (RBAC)
+- Compliance reporting exports (PDF / CSV)
+- Integration with enterprise SIEM tools (e.g., Splunk)
+- Advanced PII detection using machine learning
+
+---
+
+## 🏆 Portfolio Project
+
+SentryFlow was built to demonstrate how automated log analysis can improve **enterprise security monitoring and data privacy compliance**. As organizations handle massive volumes of system logs, automated tools like SentryFlow help detect **PII data exposure**, maintain **GDPR/CCPA compliance**, and reduce manual security workloads.
+
+---
+
+## 👨‍💻 Developer (Go WVU! 🏔️)
+
+- **Josiah Brown** – Full-Stack Developer & Cybersecurity/MIS Student  
+- Email: bjosiah52@gmail.com  
+- GitHub: https://github.com/josiahb10
+
+---
+
+## 📄 License
+
+MIT License – Built for educational and portfolio purposes.
+
+---
+
+⚠️ **Note:** This project is a prototype demonstrating automated PII detection concepts. A production-ready system would require secure authentication, encrypted databases, advanced detection models, and hardened server security.
